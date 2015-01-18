@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Let's Chat</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Chat/chat.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <div id="logo" class="pull-left">
+        </div>
+        <div id="login" class="pull-right">
+            @*<div class="form-inline">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" />
+                </div>
+                <button type="button" class="btn btn-primary">Login</button>
+            </div>*@
+            
+            <div><button type="button" class="btn btn-primary">Log Out</button></div>
+        </div>
+    </div>
+    <div id="content-body" class="clearfix">
+        @RenderBody()
+    </div>
+    <div id="footer"><h6 class="text-center">Let'sChat&copy;2015</h6></div>
+</body>
+</html>

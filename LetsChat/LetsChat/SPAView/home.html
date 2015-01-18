@@ -1,0 +1,24 @@
+﻿<div class="pull-right" style="position:relative;top:-80px;">
+    <div id="welcomemessage" class="pull-left">Welcome {{username}}</div>
+    <button type="button" class="btn btn-primary pull-left" ng-click="logout()">Log Out</button>
+</div>
+
+<div id="message-area" class="pull-left">
+    <h4 class="no-margin" style="text-align:center;">Discussion</h4>
+    <ul id="message-list">
+        <li ng-repeat="messageItem in messagelist"><strong>{{messageItem.name}}:&nbsp;&nbsp;</strong>{{messageItem.message}}</li>
+    </ul>
+    <div>
+        <textarea ng-model="message" style="width:100%;" ng-focus="messagefocus" ng-keydown="checkKeyDown($event)"></textarea>
+    </div>
+</div>
+<div id="userarea" class="pull-right">
+    <h4 class="no-margin" style="text-align:center;">Users</h4>
+    <ul id="userlist">
+        <li ng-repeat="user in users">{{user}}</li>
+        <!--<li>Sham</li>
+        <li>Sita</li>
+        <li>Chanchal</li>
+        <li>Pardeep</li>-->
+    </ul>
+</div>

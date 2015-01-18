@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="chatApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Let's Chat</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <div id="logo" class="pull-left">
+        </div>
+    </div>
+    <div id="content-body" class="clearfix">
+        <div id="left-body" class="pull-left">
+            <h2>Let's chat with group</h2>
+            <img src="/Images/chat_img.jpg" />
+        </div>
+        <div ng-view="" id="right-body" class="pull-right"></div>
+    </div>
+    <script src="/Scripts/jquery-1.10.2.js"></script>
+    <script src="/Scripts/angular.js"></script>
+    <script src="/Scripts/angular-route.js"></script>
+    <script src="/Scripts/app/app.js"></script>
+    <script src="/Scripts/app/factory.js"></script>
+    <script src="/Scripts/app/controller.js"></script>
+    <script src="/Scripts/jquery.signalR-2.0.2.js"></script>
+    <script src="/signalr/hubs" type="text/javascript"></script>
+</body>
+</html>
